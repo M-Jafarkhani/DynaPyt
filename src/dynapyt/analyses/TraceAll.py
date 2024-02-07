@@ -542,7 +542,7 @@ class TraceAll(BaseAnalysis):
         iid : int
             Unique ID of the syntax tree node.
 
-        old_vals : Any
+        old_vals : List[Callable]
             A list of old values before the write takes effect.
             It's a list to support multiple assignments.
             Each old value is wrapped into a lambda function, so that
